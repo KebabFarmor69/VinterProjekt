@@ -65,7 +65,13 @@ ________________________________________________________________________________
                 Console.ReadLine();
                 Console.Clear();
 
-                choices.ChoicesOfIngredients(money);
+
+                preparation.PreparationProcess(
+                    choices.ChoicesOfIngredients(money)
+                );
+
+
+
 
                 Console.Write("\n\nPress");
                 Console.ForegroundColor = ConsoleColor.Yellow;

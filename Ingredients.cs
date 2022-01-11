@@ -7,6 +7,8 @@ namespace VinterProjekt
         public int price;
         public int score;
 
+        public string name;
+
 
 
 

@@ -9,10 +9,10 @@ namespace VinterProjekt
         {
             List<Ingredients> ingredients = new List<Ingredients>();
 
-            Protein beef = new Protein(921, 75);
-            Protein chicken = new Protein(853, 60);
-            Protein fish = new Protein(687, 65);
-            Protein beans = new Protein(469, 20);
+            Protein beef = new Protein(921, 75, "BEEF");
+            Protein chicken = new Protein(853, 60, "CHICKEN");
+            Protein fish = new Protein(687, 65, "FISH");
+            Protein beans = new Protein(469, 20, "BEANS");
 
             Console.Write("\nFirst, you will have to buy your ");
             Console.ForegroundColor = ConsoleColor.Red;
@@ -216,10 +216,10 @@ namespace VinterProjekt
             Console.ReadLine();
             Console.Clear();
 
-            Vegetables tomato = new Vegetables(738, 30);
-            Vegetables cucumber = new Vegetables(439, 40);
-            Vegetables onion = new Vegetables(964, 15);
-            Vegetables salad = new Vegetables(276, 30);
+            Vegetables tomato = new Vegetables(738, 30, "TOMATO");
+            Vegetables cucumber = new Vegetables(439, 40, "CUCUMBER");
+            Vegetables onion = new Vegetables(964, 15, "ONION");
+            Vegetables salad = new Vegetables(276, 30, "SALAD");
 
 
             Console.ForegroundColor = ConsoleColor.Green;
@@ -323,10 +323,10 @@ namespace VinterProjekt
             Console.ReadLine();
             Console.Clear();
 
-            Liquid cream = new Liquid(853, 25);
-            Liquid milk = new Liquid(680, 20);
-            Liquid water = new Liquid(142, 5);
-            Liquid broth = new Liquid(593, 30);
+            Liquid cream = new Liquid(853, 25, "CREAM");
+            Liquid milk = new Liquid(680, 20, "MILK");
+            Liquid water = new Liquid(142, 5, "WATER");
+            Liquid broth = new Liquid(593, 30, "BROTH");
 
 
             Console.ForegroundColor = ConsoleColor.Green;
@@ -431,10 +431,10 @@ namespace VinterProjekt
             Console.ReadLine();
             Console.Clear();
 
-            Spices oregano = new Spices(659, 30);
-            Spices basil = new Spices(720, 35);
-            Spices parsley = new Spices(626, 30);
-            Spices thyme = new Spices(525, 25);
+            Spices oregano = new Spices(659, 30, "OREGANO");
+            Spices basil = new Spices(720, 35, "BASIL");
+            Spices parsley = new Spices(626, 30, "PARSLEY");
+            Spices thyme = new Spices(525, 25, "THYME");
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(money);
