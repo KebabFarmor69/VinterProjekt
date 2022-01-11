@@ -22,6 +22,8 @@ namespace VinterProjekt
            */
             while (loopIsRunning)
             {
+                Console.Clear();
+
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine(@" 
 ____________________________________________________________________________________________________________________
@@ -72,15 +74,15 @@ ________________________________________________________________________________
 
 
 
-
-                Console.Write("\n\nPress");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("\n\nPress ");
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("ENTER");
+                Console.Write("ENTER ");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write("to play again.");
-                Console.Write("\n\nPress");
+                Console.Write("\n\nPress ");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("ESCAPE");
+                Console.Write("ESCAPE ");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write("to exit.");
 

@@ -6,10 +6,11 @@ namespace VinterProjekt
     {
 
 
-        public Carbs(int _score, int _price)
+        public Carbs(int _score, int _price, string _name)
         {
             score = _score;
             price = _price;
+            name = _name;
         }
 
     }

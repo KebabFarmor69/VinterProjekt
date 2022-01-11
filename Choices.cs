@@ -111,10 +111,10 @@ namespace VinterProjekt
             Console.ReadLine();
             Console.Clear();
 
-            Carbs pasta = new Carbs(873, 25);
-            Carbs potato = new Carbs(597, 10);
-            Carbs bread = new Carbs(682, 35);
-            Carbs noodles = new Carbs(928, 40);
+            Carbs pasta = new Carbs(873, 25, "PASTA");
+            Carbs potato = new Carbs(597, 10, "POTATO");
+            Carbs bread = new Carbs(682, 35, "BREAD");
+            Carbs noodles = new Carbs(928, 40, "NOODLES");
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(money);
@@ -414,7 +414,7 @@ namespace VinterProjekt
                     default:
 
                         Console.Write("\nPlease choose one of the following:\n\n");
-                        vegetablesList.ForEach(Console.WriteLine);
+                        liquidList.ForEach(Console.WriteLine);
 
                         break;
                 }
@@ -520,12 +520,21 @@ namespace VinterProjekt
                     default:
 
                         Console.Write("\nPlease choose one of the following:\n\n");
-                        vegetablesList.ForEach(Console.WriteLine);
+                        spicesList.ForEach(Console.WriteLine);
 
                         break;
                 }
                 loop = false;
+
             }
+            Console.Write("\n\nPlease press ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("ENTER");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(" to continue.");
+
+            Console.ReadLine();
+            Console.Clear();
 
             return ingredients;
         }
